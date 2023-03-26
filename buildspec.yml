@@ -3,8 +3,9 @@ version: 0.2
 phases:
   install:
     commands:
-      - yum -y upgrade nodejs
-      - npm install -y -g npm@9.6.2 aws-cdk@2.70.0
+      - yum install -y gcc-c++ make 
+      - curl -sL https://rpm.nodesource.com/setup_16.x | sudo -E bash - 
+      - npm install -g npm@9.6.2 aws-cdk@2.70.0
       - npm install
   build:
     commands:
