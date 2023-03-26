@@ -3,8 +3,8 @@ version: 0.2
 phases:
   install:
     commands:
+      - npm install -y -g npm@9.6.2 aws-cdk@2.70.0
       - npm install
-      - npm install -y aws-cdk@2.70.0
   build:
     commands:
       - npm run build
